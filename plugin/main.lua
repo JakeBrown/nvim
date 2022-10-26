@@ -1,0 +1,20 @@
+require('packer').startup(function(use)
+  use 'wbthomason/packer.nvim'
+  use 'overcache/NeoSolarized'
+  use 'ryanoasis/vim-devicons'
+  use 'ap/vim-buftabline'
+  use 'Chiel92/vim-autoformat'
+  use 'preservim/nerdtree'
+  use 'othree/html5.vim'
+  use 'pangloss/vim-javascript'
+  use 'neovim/nvim-lspconfig'
+  use 'hrsh7th/cmp-nvim-lsp'
+  use 'hrsh7th/cmp-buffer'
+  use 'hrsh7th/cmp-path'
+  use 'hrsh7th/cmp-cmdline'
+  use 'hrsh7th/nvim-cmp'
+  use 'kyazdani42/nvim-web-devicons'
+  use 'folke/trouble.nvim'
+  use 'folke/lsp-colors.nvim'
+end)
+
