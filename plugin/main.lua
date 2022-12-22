@@ -16,5 +16,25 @@ require('packer').startup(function(use)
   use 'kyazdani42/nvim-web-devicons'
   use 'folke/trouble.nvim'
   use 'folke/lsp-colors.nvim'
+  use 'evanleck/vim-svelte'
+use {
+  "nvim-neo-tree/neo-tree.nvim",
+    branch = "v2.x",
+    requires = { 
+      "nvim-lua/plenary.nvim",
+      "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
+      "MunifTanjim/nui.nvim",
+    }
+  }
+  use { "zbirenbaum/copilot.lua" }
+  use { "mhartington/formatter.nvim" }
+use {
+  "zbirenbaum/copilot-cmp",
+  after = { "copilot.lua" },
+  method = "getCompletionsCycling",
+  config = function ()
+    require("copilot_cmp").setup()
+  end
+}
 end)
 
